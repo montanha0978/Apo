@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+textarea,
+select {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#adicionar-experiencia,
+#adicionar-educacao,
+#adicionar-habilidade,
+#adicionar-idioma {
+    background-color: #28a745;
+}
+
+#adicionar-experiencia:hover,
+#adicionar-educacao:hover,
+#adicionar-habilidade:hover,
+#adicionar-idioma:hover {
+    background-color: #1e7e34;
+}
+
+.remover-experiencia,
+.remover-educacao,
+.remover-habilidade,
+.remover-idioma {
+    background-color: #dc3545;
+    margin-left: 10px;
+}
+
+.remover-experiencia:hover,
+.remover-educacao:hover,
+.remover-habilidade:hover,
+.remover-idioma:hover {
+    background-color: #c82333;
+}
+
+.experiencia-item,
+.educacao-item,
+.habilidade-item,
+.idioma-item {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.experiencia-item h3,
+.educacao-item h3 {
+    width: 100%;
+    margin-top: 0;
+}
+
+.experiencia-item .form-group,
+.educacao-item .form-group,
+.habilidade-item .form-group,
+.idioma-item .form-group {
+    flex-grow: 1;
+    min-width: calc(50% - 5px);
+}
+
+.habilidade-item .form-group {
+    min-width: calc(100% - 10px);
+}
+
+.idioma-item .form-group:first-child {
+    min-width: calc(60% - 5px);
+}
+
+.idioma-item .form-group:nth-child(2) {
+    min-width: calc(40% - 5px);
+}
